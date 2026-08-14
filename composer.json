@@ -1,0 +1,103 @@
+{
+    "name": "microscrap/gtk",
+    "description": "GTK4 Bindings for The PHP GTK Extension",
+    "type": "library",
+    "version": "0.7.0",
+    "keywords": [
+        "framework",
+        "scrapyard-io",
+        "gtk",
+        "bindings",
+        "linux"
+    ],
+    "license": "MIT",
+    "homepage": "https://scrapyard-io.projectsaturnstudios.com/ecosystem/microscrap/gtk/0.7.x/overview",
+    "support": {
+        "docs": "https://scrapyard-io.projectsaturnstudios.com/ecosystem/microscrap/gtk/0.7.x/overview",
+        "issues": "https://github.com/microscrap/gtk/issues",
+        "source": "https://github.com/microscrap/gtk"
+    },
+    "authors": [
+        {
+            "name": "Angel Gonzalez",
+            "email": "angel@projectsaturnstudios.com"
+        }
+    ],
+    "require": {
+        "php": "^8.4|^8.5|^8.6",
+        "ext-gtk": "^0.7.0"
+    },
+    "require-dev": {
+        "pestphp/pest": "^4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Microscrap\\Bindings\\Gtk\\": "src/"
+        },
+        "files": [
+            "src/Helpers/gtk-core.php",
+            "src/Helpers/gtk-application.php",
+            "src/Helpers/gtk-window.php",
+            "src/Helpers/gtk-widget.php",
+            "src/Helpers/gtk-button.php",
+            "src/Helpers/gtk-label.php",
+            "src/Helpers/gtk-entry.php",
+            "src/Helpers/gtk-checkbutton.php",
+            "src/Helpers/gtk-switch.php",
+            "src/Helpers/gtk-box.php",
+            "src/Helpers/gtk-glarea.php",
+            "src/Helpers/gtk-gpupane.php",
+            "src/Helpers/gtk-glib.php",
+            "src/Helpers/gtk-alertdialog.php",
+            "src/Helpers/gtk-centerbox.php",
+            "src/Helpers/gtk-colordialog.php",
+            "src/Helpers/gtk-dropdown.php",
+            "src/Helpers/gtk-filedialog.php",
+            "src/Helpers/gtk-fontdialog.php",
+            "src/Helpers/gtk-grid.php",
+            "src/Helpers/gtk-headerbar.php",
+            "src/Helpers/gtk-image.php",
+            "src/Helpers/gtk-listbox.php",
+            "src/Helpers/gtk-listitem.php",
+            "src/Helpers/gtk-listview.php",
+            "src/Helpers/gtk-menubutton.php",
+            "src/Helpers/gtk-notebook.php",
+            "src/Helpers/gtk-overlay.php",
+            "src/Helpers/gtk-paned.php",
+            "src/Helpers/gtk-passwordentry.php",
+            "src/Helpers/gtk-picture.php",
+            "src/Helpers/gtk-popover.php",
+            "src/Helpers/gtk-progressbar.php",
+            "src/Helpers/gtk-scale.php",
+            "src/Helpers/gtk-scrolledwindow.php",
+            "src/Helpers/gtk-searchentry.php",
+            "src/Helpers/gtk-separator.php",
+            "src/Helpers/gtk-singleselection.php",
+            "src/Helpers/gtk-spinbutton.php",
+            "src/Helpers/gtk-spinner.php",
+            "src/Helpers/gtk-stack.php",
+            "src/Helpers/gtk-stringlist.php",
+            "src/Helpers/gtk-textview.php",
+            "src/Helpers/gtk-togglebutton.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "DeptOfScrapyardRobotics\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.7.x-dev",
+            "dev-main": "0.7.x-dev"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
