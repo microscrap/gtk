@@ -18,8 +18,11 @@ return [
     ],
     'Gtk\\GTK\\Application\\GtkApplication' => [
         'gtkApplicationNew',
+        'gtkApplicationRegister',
         'gtkApplicationRun',
         'gtkApplicationQuit',
+        'gtkApplicationSetMenubar',
+        'gtkApplicationSetAccelsForAction',
     ],
     'Gtk\\GTK\\Window\\GtkWindow' => [
         'gtkWindowNew',
@@ -182,6 +185,7 @@ return [
         'gtkMenuButtonGetLabel',
         'gtkMenuButtonSetPopover',
         'gtkMenuButtonGetPopover',
+        'gtkMenuButtonSetMenuModel',
         'gtkMenuButtonPopup',
         'gtkMenuButtonPopdown',
     ],
@@ -192,6 +196,12 @@ return [
         'gtkPopoverPopup',
         'gtkPopoverPopdown',
         'gtkPopoverSetAutohide',
+    ],
+    'Gtk\\GTK\\PopoverMenu\\GtkPopoverMenu' => [
+        'gtkPopoverMenuNewFromModel',
+    ],
+    'Gtk\\GTK\\PopoverMenuBar\\GtkPopoverMenuBar' => [
+        'gtkPopoverMenuBarNewFromModel',
     ],
     'Gtk\\GTK\\ScrolledWindow\\GtkScrolledWindow' => [
         'gtkScrolledWindowNew',
@@ -320,6 +330,18 @@ return [
         'gtkFontDialogSetModal',
         'gtkFontDialogChooseFont',
     ],
+    'Gtk\\GTK\\GMenu\\GMenu' => [
+        'gMenuNew',
+        'gMenuAppend',
+        'gMenuAppendSection',
+        'gMenuAppendSubmenu',
+        'gMenuFreeze',
+    ],
+    'Gtk\\GTK\\GSimpleAction\\GSimpleAction' => [
+        'gSimpleActionNew',
+        'gActionMapAddAction',
+        'gSimpleActionSetEnabled',
+    ],
     'Gtk\\GTK\\Box\\GtkBox' => [
         'gtkBoxNew',
         'gtkBoxAppend',
@@ -341,5 +363,7 @@ return [
         'gObjectRef',
         'gObjectUnref',
         'gSignalConnect',
+        'gMainContextDefault',
+        'gMainContextIteration',
     ],
 ];

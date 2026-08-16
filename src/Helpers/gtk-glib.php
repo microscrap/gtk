@@ -30,3 +30,17 @@ if (! function_exists('g_signal_connect')) {
         return GtkGLib::gSignalConnect($instance, $signal, $callback);
     }
 }
+
+if (! function_exists('g_main_context_default')) {
+    function g_main_context_default(): int
+    {
+        return GtkGLib::gMainContextDefault();
+    }
+}
+
+if (! function_exists('g_main_context_iteration')) {
+    function g_main_context_iteration(int $context, bool $mayBlock): bool
+    {
+        return GtkGLib::gMainContextIteration($context, $mayBlock);
+    }
+}
