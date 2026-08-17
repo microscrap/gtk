@@ -25,7 +25,7 @@ Read this index first; open only the concepts needed for the task.
 
 # API
 
-* [Helper map (gtk_* / g_*)](api/helper-map.md) - Core, Application, Window, Widget, Button, native widgets, Box, GLArea, GLib.
+* [Helper map (gtk_* / g_*)](api/helper-map.md) - Core, Application, Window, Widget, Button, native widgets, Box, Fixed, GLArea, GLib.
 
 # Conventions
 

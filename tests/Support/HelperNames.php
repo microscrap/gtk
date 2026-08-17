@@ -23,8 +23,11 @@ final class HelperNames
         ],
         'Gtk\\GTK\\Application\\GtkApplication' => [
             'gtkApplicationNew' => 'gtk_application_new',
+            'gtkApplicationRegister' => 'g_application_register',
             'gtkApplicationRun' => 'gtk_application_run',
             'gtkApplicationQuit' => 'gtk_application_quit',
+            'gtkApplicationSetMenubar' => 'gtk_application_set_menubar',
+            'gtkApplicationSetAccelsForAction' => 'gtk_application_set_accels_for_action',
         ],
         'Gtk\\GTK\\Window\\GtkWindow' => [
             'gtkWindowNew' => 'gtk_window_new',
@@ -55,6 +58,7 @@ final class HelperNames
             'gtkWidgetGetHeight' => 'gtk_widget_get_height',
             'gtkWidgetQueueDraw' => 'gtk_widget_queue_draw',
             'gtkWidgetAddTickCallback' => 'gtk_widget_add_tick_callback',
+            'gtkWidgetApplyCss' => 'gtk_widget_apply_css',
         ],
         'Gtk\\GTK\\Button\\GtkButton' => [
             'gtkButtonNew' => 'gtk_button_new',
@@ -66,6 +70,7 @@ final class HelperNames
             'gtkLabelNew' => 'gtk_label_new',
             'gtkLabelSetText' => 'gtk_label_set_text',
             'gtkLabelGetText' => 'gtk_label_get_text',
+            'gtkLabelSetXalign' => 'gtk_label_set_xalign',
         ],
         'Gtk\\GTK\\Entry\\GtkEntry' => [
             'gtkEntryNew' => 'gtk_entry_new',
@@ -83,6 +88,7 @@ final class HelperNames
             'gtkCheckButtonGetLabel' => 'gtk_check_button_get_label',
             'gtkCheckButtonSetActive' => 'gtk_check_button_set_active',
             'gtkCheckButtonGetActive' => 'gtk_check_button_get_active',
+            'gtkCheckButtonSetGroup' => 'gtk_check_button_set_group',
         ],
         'Gtk\\GTK\\GtkSwitch\\GtkSwitch' => [
             'gtkSwitchNew' => 'gtk_switch_new',
@@ -187,6 +193,7 @@ final class HelperNames
             'gtkMenuButtonGetLabel' => 'gtk_menu_button_get_label',
             'gtkMenuButtonSetPopover' => 'gtk_menu_button_set_popover',
             'gtkMenuButtonGetPopover' => 'gtk_menu_button_get_popover',
+            'gtkMenuButtonSetMenuModel' => 'gtk_menu_button_set_menu_model',
             'gtkMenuButtonPopup' => 'gtk_menu_button_popup',
             'gtkMenuButtonPopdown' => 'gtk_menu_button_popdown',
         ],
@@ -197,6 +204,12 @@ final class HelperNames
             'gtkPopoverPopup' => 'gtk_popover_popup',
             'gtkPopoverPopdown' => 'gtk_popover_popdown',
             'gtkPopoverSetAutohide' => 'gtk_popover_set_autohide',
+        ],
+        'Gtk\\GTK\\PopoverMenu\\GtkPopoverMenu' => [
+            'gtkPopoverMenuNewFromModel' => 'gtk_popover_menu_new_from_model',
+        ],
+        'Gtk\\GTK\\PopoverMenuBar\\GtkPopoverMenuBar' => [
+            'gtkPopoverMenuBarNewFromModel' => 'gtk_popover_menu_bar_new_from_model',
         ],
         'Gtk\\GTK\\ScrolledWindow\\GtkScrolledWindow' => [
             'gtkScrolledWindowNew' => 'gtk_scrolled_window_new',
@@ -242,6 +255,13 @@ final class HelperNames
             'gtkGridSetColumnSpacing' => 'gtk_grid_set_column_spacing',
             'gtkGridSetRowHomogeneous' => 'gtk_grid_set_row_homogeneous',
             'gtkGridSetColumnHomogeneous' => 'gtk_grid_set_column_homogeneous',
+        ],
+        'Gtk\\GTK\\Fixed\\GtkFixed' => [
+            'gtkFixedNew' => 'gtk_fixed_new',
+            'gtkFixedPut' => 'gtk_fixed_put',
+            'gtkFixedMove' => 'gtk_fixed_move',
+            'gtkFixedRemove' => 'gtk_fixed_remove',
+            'gtkFixedGetChildPosition' => 'gtk_fixed_get_child_position',
         ],
         'Gtk\\GTK\\CenterBox\\GtkCenterBox' => [
             'gtkCenterBoxNew' => 'gtk_center_box_new',
@@ -319,6 +339,18 @@ final class HelperNames
             'gtkColorDialogSetModal' => 'gtk_color_dialog_set_modal',
             'gtkColorDialogChooseRgba' => 'gtk_color_dialog_choose_rgba',
         ],
+        'Gtk\\GTK\\GMenu\\GMenu' => [
+            'gMenuNew' => 'g_menu_new',
+            'gMenuAppend' => 'g_menu_append',
+            'gMenuAppendSection' => 'g_menu_append_section',
+            'gMenuAppendSubmenu' => 'g_menu_append_submenu',
+            'gMenuFreeze' => 'g_menu_freeze',
+        ],
+        'Gtk\\GTK\\GSimpleAction\\GSimpleAction' => [
+            'gSimpleActionNew' => 'g_simple_action_new',
+            'gActionMapAddAction' => 'g_action_map_add_action',
+            'gSimpleActionSetEnabled' => 'g_simple_action_set_enabled',
+        ],
         'Gtk\\GTK\\FontDialog\\GtkFontDialog' => [
             'gtkFontDialogNew' => 'gtk_font_dialog_new',
             'gtkFontDialogSetTitle' => 'gtk_font_dialog_set_title',
@@ -346,6 +378,8 @@ final class HelperNames
             'gObjectRef' => 'g_object_ref',
             'gObjectUnref' => 'g_object_unref',
             'gSignalConnect' => 'g_signal_connect',
+            'gMainContextDefault' => 'g_main_context_default',
+            'gMainContextIteration' => 'g_main_context_iteration',
         ],
     ];
 

@@ -1,5 +1,33 @@
 # OKF log
 
+## 2026-08-16 (GtkWidget apply_css)
+
+- Helper `gtk_widget_apply_css` on `gtk-widget.php`. Per-widget CSS (font-size, font-weight, etc.) via ext-gtk `gtkWidgetApplyCss`. Frozen surface + HelperNames updated.
+
+## 2026-08-16 (GtkLabel set_xalign)
+
+- Helper `gtk_label_set_xalign` on `gtk-label.php`. Frozen surface + HelperNames + CoverageTest updated.
+
+## 2026-08-16 (GtkCheckButton set_group)
+
+- Helper `gtk_check_button_set_group` on `gtk-checkbutton.php`. Frozen surface + HelperNames + CoverageTest updated. GTK4 radio grouping.
+
+## 2026-08-16 (GtkFixed helpers)
+
+- Helpers `gtk_fixed_new` / `put` / `move` / `remove` / `get_child_position` on `gtk-fixed.php`. Frozen surface + HelperNames + CoverageTest updated. Child w/h is still `gtk_widget_set_size_request`.
+
+## 2026-08-15 (g_application_register helper)
+
+- `g_application_register` on `gtk-application.php`. Cooperative-loop apps must register before menubar.
+
+## 2026-08-15 (GMainContext poll helpers)
+
+- `g_main_context_default`, `g_main_context_iteration` on `GtkGLib` / `gtk-glib.php`.
+
+## 2026-08-15 (GMenu / menubar helpers)
+
+- Helpers `g_menu_*`, `g_simple_action_*`, `g_action_map_add_action`, `gtk_application_set_menubar`, `gtk_application_set_accels_for_action`, `gtk_menu_button_set_menu_model`, `gtk_popover_menu_new_from_model`, `gtk_popover_menu_bar_new_from_model`. Frozen surface + HelperNames + CoverageTest updated.
+
 ## 2026-08-14 (full native widget helpers)
 
 - 1:1 helpers for Image, Picture, Spinner, ProgressBar, Separator, PasswordEntry, TextView, ToggleButton, SpinButton, Scale, DropDown, SearchEntry, HeaderBar, MenuButton, Popover, ScrolledWindow, Notebook, Stack, Paned, Grid, CenterBox, Overlay, ListBox, StringList, SingleSelection, ListItem, ListView, AlertDialog, FileDialog, ColorDialog, FontDialog. `gtk_window_set_titlebar` / `get_titlebar`. Enums `PolicyType`, `WrapMode`. Frozen surface + HelperNames + CoverageTest updated.

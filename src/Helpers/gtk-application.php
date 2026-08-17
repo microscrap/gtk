@@ -15,6 +15,13 @@ if (! function_exists('gtk_application_new')) {
     }
 }
 
+if (! function_exists('g_application_register')) {
+    function g_application_register(int $app): bool
+    {
+        return GtkApplication::gtkApplicationRegister($app);
+    }
+}
+
 if (! function_exists('gtk_application_run')) {
     function gtk_application_run(int $app): int
     {
@@ -26,5 +33,22 @@ if (! function_exists('gtk_application_quit')) {
     function gtk_application_quit(int $app): void
     {
         GtkApplication::gtkApplicationQuit($app);
+    }
+}
+
+if (! function_exists('gtk_application_set_menubar')) {
+    function gtk_application_set_menubar(int $app, int $menuModel): void
+    {
+        GtkApplication::gtkApplicationSetMenubar($app, $menuModel);
+    }
+}
+
+if (! function_exists('gtk_application_set_accels_for_action')) {
+    /**
+     * @param list<string> $accels
+     */
+    function gtk_application_set_accels_for_action(int $app, string $detailedAction, array $accels): void
+    {
+        GtkApplication::gtkApplicationSetAccelsForAction($app, $detailedAction, $accels);
     }
 }

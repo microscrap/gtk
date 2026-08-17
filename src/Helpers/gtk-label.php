@@ -28,3 +28,10 @@ if (! function_exists('gtk_label_get_text')) {
         return GtkLabel::gtkLabelGetText($label);
     }
 }
+
+if (! function_exists('gtk_label_set_xalign')) {
+    function gtk_label_set_xalign(int $label, float $xalign): void
+    {
+        GtkLabel::gtkLabelSetXalign($label, $xalign);
+    }
+}

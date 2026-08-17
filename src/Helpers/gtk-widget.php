@@ -98,3 +98,10 @@ if (! function_exists('gtk_widget_add_tick_callback')) {
         return GtkWidget::gtkWidgetAddTickCallback($widget, $callback);
     }
 }
+
+if (! function_exists('gtk_widget_apply_css')) {
+    function gtk_widget_apply_css(int $widget, string $css): void
+    {
+        GtkWidget::gtkWidgetApplyCss($widget, $css);
+    }
+}

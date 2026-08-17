@@ -49,3 +49,10 @@ if (! function_exists('gtk_check_button_get_active')) {
         return GtkCheckButton::gtkCheckButtonGetActive($button);
     }
 }
+
+if (! function_exists('gtk_check_button_set_group')) {
+    function gtk_check_button_set_group(int $button, int $group): void
+    {
+        GtkCheckButton::gtkCheckButtonSetGroup($button, $group);
+    }
+}

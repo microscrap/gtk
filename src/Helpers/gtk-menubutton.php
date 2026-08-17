@@ -36,6 +36,13 @@ if (! function_exists('gtk_menu_button_set_popover')) {
     }
 }
 
+if (! function_exists('gtk_menu_button_set_menu_model')) {
+    function gtk_menu_button_set_menu_model(int $button, int $menuModel): void
+    {
+        GtkMenuButton::gtkMenuButtonSetMenuModel($button, $menuModel);
+    }
+}
+
 if (! function_exists('gtk_menu_button_get_popover')) {
     function gtk_menu_button_get_popover(int $button): int
     {
