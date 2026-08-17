@@ -64,7 +64,7 @@ Menubar model helpers: `g_menu_*`, `g_simple_action_*`, `g_action_map_add_action
 
 ## Widget / Button / Box / GLArea / GLib / native widgets
 
-See `HelperNames.php` for the remaining 1:1 maps (`gtk_widget_*`, `gtk_button_*`, `gtk_label_*`, `gtk_entry_*`, `gtk_check_button_*`, `gtk_switch_*`, display/input/chrome/dialog helpers, `gtk_box_*`, `gtk_fixed_*`, `gtk_gl_area_*`, `g_object_ref`, `g_object_unref`, `g_signal_connect`, `g_main_context_default`, `g_main_context_iteration`).
+See `HelperNames.php` for the remaining 1:1 maps (`gtk_widget_*`, `gtk_button_*`, `gtk_label_*`, `gtk_entry_*`, `gtk_check_button_*`, `gtk_switch_*`, display/input/chrome/dialog helpers, `gtk_box_*`, `gtk_gl_area_*`, `g_object_ref`, `g_object_unref`, `g_signal_connect`, `g_main_context_default`, `g_main_context_iteration`).
 
 `gtk_entry_set_text` / `get_text` wrap `GtkEntry::gtkEntrySetText` / `GetText` (C: `gtk_editable_*`). Switch helpers live in `gtk-switch.php` and call `Gtk\\GTK\\GtkSwitch\\GtkSwitch` (`switch` is a reserved PHP word).
 

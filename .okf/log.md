@@ -1,21 +1,5 @@
 # OKF log
 
-## 2026-08-16 (GtkWidget apply_css)
-
-- Helper `gtk_widget_apply_css` on `gtk-widget.php`. Per-widget CSS (font-size, font-weight, etc.) via ext-gtk `gtkWidgetApplyCss`. Frozen surface + HelperNames updated.
-
-## 2026-08-16 (GtkLabel set_xalign)
-
-- Helper `gtk_label_set_xalign` on `gtk-label.php`. Frozen surface + HelperNames + CoverageTest updated.
-
-## 2026-08-16 (GtkCheckButton set_group)
-
-- Helper `gtk_check_button_set_group` on `gtk-checkbutton.php`. Frozen surface + HelperNames + CoverageTest updated. GTK4 radio grouping.
-
-## 2026-08-16 (GtkFixed helpers)
-
-- Helpers `gtk_fixed_new` / `put` / `move` / `remove` / `get_child_position` on `gtk-fixed.php`. Frozen surface + HelperNames + CoverageTest updated. Child w/h is still `gtk_widget_set_size_request`.
-
 ## 2026-08-15 (g_application_register helper)
 
 - `g_application_register` on `gtk-application.php`. Cooperative-loop apps must register before menubar.
